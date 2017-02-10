@@ -39,17 +39,17 @@ app.get('/api/cardsets/:name', function(req, res) {
 
 // CSS
 app.get('/cover.css', function(req, res) {
-	res.sendfile(__dirname + '/public/cover.css');
+	res.sendFile(__dirname + '/public/cover.css');
 });
 
 // Browserify bundle
 app.get('/bundle.js', function(req, res) {
-	res.sendfile(__dirname + '/public/bundle.js');
+	res.sendFile(__dirname + '/public/bundle.js');
 });
 
 // Everyone else gets redirected to index
 app.get('*', function(req, res) {
-	res.sendfile(__dirname + '/public/index.html');
+	res.sendFile(__dirname + '/public/index.html');
 });
 
 // Listen
