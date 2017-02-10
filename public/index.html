@@ -17,7 +17,7 @@
     <link href="cover.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body ng-controller="cardCtrl">
 
     <div class="site-wrapper">
 
@@ -28,6 +28,13 @@
           <div class="masthead clearfix">
             <div class="inner">
               <h3 class="masthead-brand">AF</h3>
+	      <nav>
+		      <ul class="nav masthead-nav">
+			      <li ng-class="{ 'active': apparenteffect }">
+				      <a href="#" ng-click="loadCardset()">ApparentEffect</a>
+			      </li>
+		      </ul>
+	      </nav>
             </div>
           </div>
 
